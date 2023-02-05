@@ -18,7 +18,7 @@ body {
     color: black;
 }
 
-.find-polygon {
+.find-piece {
     margin: 0 10px;
 }
 
@@ -43,4 +43,18 @@ body {
 
 .map {
     min-height: 90vh;
+    z-index: 0;
+}
+
+.message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: white;
+    background-color: green;
+    display: none;
 }

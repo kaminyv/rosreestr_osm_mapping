@@ -9,8 +9,8 @@
     <title>Rosreestr OSM Mapping</title>
 
     <!-- CSS -->
-    <link href="/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename= '/css/reset.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename= '/css/main.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
@@ -26,15 +26,17 @@
     <nav class="nav-bar">
         <a class="brand" href="/">Rosreestr OSM Mapping</a>
     </nav>
-    <form class="find-polygon">
-        <input class="input" name="rr_id" type="text" placeholder="" value="">
+    <form class="find-piece">
+        <input class="input" name="piece_id" type="text" placeholder="" value="">
         <input class="btn" name="btn_find" type="button" value="Find">
     </form>
 </header>
 <main>
     <div id="map" class="map"></div>
 </main>
+<div id="message" class="message"></div>
+
 <!-- JS -->
-<script src="/js/main.js"></script>
+<script src="{{ url_for('static', filename= '/js/main.js') }}"></script>
 </body>
 </html>
