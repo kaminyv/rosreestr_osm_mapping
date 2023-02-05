@@ -1,0 +1,46 @@
+body {
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.brand {
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+}
+
+.find-polygon {
+    margin: 0 10px;
+}
+
+.input {
+    height: 34px;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    height: 36px;
+}
+
+.map {
+    min-height: 90vh;
+}

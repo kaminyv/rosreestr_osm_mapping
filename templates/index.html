@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web application for displaying polygons by Rosreestr number.">
+    <meta name="author" content="kaminyv">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rosreestr OSM Mapping</title>
+
+    <!-- CSS -->
+    <link href="/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
+</head>
+<body>
+<header class="header">
+    <nav class="nav-bar">
+        <a class="brand" href="/">Rosreestr OSM Mapping</a>
+    </nav>
+    <form class="find-polygon">
+        <input class="input" name="rr_id" type="text" placeholder="" value="">
+        <input class="btn" name="btn_find" type="button" value="Find">
+    </form>
+</header>
+<main>
+    <div id="map" class="map"></div>
+</main>
+<!-- JS -->
+<script src="/js/main.js"></script>
+</body>
+</html>
